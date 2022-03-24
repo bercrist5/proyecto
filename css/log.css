@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 1px;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../img/imgbit.jpg);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.container {
+    margin-top: 5%;
+}
+
+.hh{
+    margin-left:22%;
+    margin-top: 4%;
+}
+.hh2{
+    margin-left: 65%;
+    background: transparent;
+}
+.hh2:hover{
+    border-radius: 50px;
+    background-color: aquamarine;
+}
+.bit001 {
+    margin-left: 10%;
+    margin-top: 10%;
+    width: 70%;
+}
+
+.bit002 {
+    margin-left: 36px;
+    width: 100%;
+    font-size: small;
+    text-align: justify;
+}
+
+.mb-3 {
+    font-size: small;
+    margin-top: 5%;
+    width: 100%;
+    margin-left: 8.4%;
+    align-items: center;
+}
+
+.ab {
+    height: 33px;
+    border: none;
+    color: white;
+    background-color: #215a9d;
+    border-radius: 60px;
+}
+
+footer {
+    text-align: center;
+    font-size: medium;
+    color: #215a9d;
+    width: 98.8%;
+    bottom: 0;
+    position: fixed;
+}
