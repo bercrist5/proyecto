@@ -12,6 +12,12 @@ body {
 	font-size: 300;
 	font-size: 16px;
 }
+
+#txtArea{
+    min-height: 150px;
+    background-color: rgb(243, 243, 243);
+    resize: none;
+}
 ol, ul {
 	list-style: none;
 }
