@@ -313,17 +313,18 @@ testimonial
     background-color: #fff;
     border-radius: 50%;
     float: left;
-    margin-right: 10px;
+    margin-right: 12px;
 }
 .testi-info a img{
 	border-radius: 50%;
 }
 .testi-info h3 {
     display: inline-block;
-    line-height: 22px;
+    line-height: 26px;
     font-weight: 600;
     color: #000;
-    margin-top: 8px;
+    margin-top: 12px;
+    margin-left: 18px;
 }
 .testi-info h3 > span {
     display: block;
