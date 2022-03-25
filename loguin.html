@@ -9,14 +9,9 @@
     <title>PetroSalud</title>
     <link rel="icon" href="img/logo.png" type="image/ico">
     <link rel="stylesheet" href="css/log.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
-        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
-        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
@@ -33,10 +28,10 @@
                             <span class="input-group-text non bg-transparent border-dark">
                                 <img src="img/people.svg" alt="" width="24px">
                             </span>
-                            <input type="text" class="form-control bg-transparent border-dark">
+                            <input type="text" class="form-control bg-transparent border-dark" id="nombreUsuario">
                         </div>
                         <div class="input-group mb-3">
-                            <input type="password" name="password" id="password" class="form-control">
+                            <input type="password" name="password" id="passwordUsuario" class="form-control">
                             <span class="input-group-text non"><img src="img/eye.svg" alt="" width="24px"
                                     onclick="cambia();">
                             </span>
@@ -51,11 +46,9 @@
                             </div>
                         </div>
                         <div class="bit002">
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus odit, impedit, iusto,
-                                soluta facere odio vel laborum nobis ducimus voluptas natus necessitatibus veritatis.
-                                Nostrum sed sit eius architecto natus quam?</p>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus odit, impedit, iusto, soluta facere odio vel laborum nobis ducimus voluptas natus necessitatibus veritatis. Nostrum sed sit eius architecto natus quam?</p>
                         </div>
-                        <button type="submit" class="mb-3 ab">Aceptar</button>
+                        <button type="submit" class="mb-3 ab" id="iniciarLogin">Aceptar</button>
                     </form>
                 </div>
             </div>
@@ -68,14 +61,16 @@
     </footer>
     <script>
         function cambia() {
-            var valor = $("#password").attr("type");
-            if (valor == "password") {
-                $("#password").attr("type", "text");
+            var valor = $("#passwordUsuario").attr("type");
+            if (valor == "passwordUsuario") {
+                $("#passwordUsuario").attr("type", "text");
             } else {
-                $("#password").attr("type", "password");
+                $("#passwordUsuario").attr("type", "password");
             }
         }
     </script>
+
+    <script src="./js/login.js"></script>
 </body>
 
 </html>
