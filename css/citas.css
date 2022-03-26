@@ -1,0 +1,19 @@
+.tablaCitas{
+    margin-left: 20%;
+}
+
+#citasPadre{
+    display: flex;
+    flex-direction: row;
+    height: 300px;
+}
+.citasHijo{
+    border: 1px solid;
+    width: 100%;
+}
+.citasEnca{
+    text-align: center;
+}
+hr{
+    border: solid 1px black;
+}
