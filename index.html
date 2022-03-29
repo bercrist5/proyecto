@@ -1,18 +1,22 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>PetroSalud</title>
+  <title>Medilab Free Bootstrap HTML5 Template</title>
   <meta name="description" content="Free Bootstrap Theme by BootstrapMade.com">
-  <meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
-  
-  <link rel="icon" href="img/logo.png" type="image/ico">
+  <meta name="keywords"
+    content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
+
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway|Candal">
   <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/5fe29365f0.js" crossorigin="anonymous"></script>
+
   <!-- =======================================================
     Theme Name: Medilab
     Theme URL: https://bootstrapmade.com/medilab-free-medical-bootstrap-theme/
@@ -25,22 +29,41 @@
   <!--banner-->
   <section id="banner" class="banner">
     <div class="bg-color">
-      <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgba(40, 45, 50, 0.7);">
+
+
+      <nav class="navbar navbar-expand-sm navbar-light bg-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img src="img/logo.png"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#opciones">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-              <a class="nav-link" href="#service">Servicios</a>
-              <a class="nav-link" href="./loguin.html" target="_blank">Login</a>
-              <a class="nav-link" href="#testimonial" >Comentarios</a>
-            </div>
+
+          <!-- logo -->
+          <a class="navbar-brand" href="#"><img src="img/logo.png"></a>
+
+          <!-- enlaces -->
+          <div class="collapse navbar-collapse" id="opciones">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#service">Servicios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="loguin.html" target="_blank">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#testimonial">Comentarios</a>
+              </li>
+            </ul>
+          </div>
+          <div>  <!-- nombre del usuario-->
+            <input type="text" class="n_usuario">  
           </div>
         </div>
       </nav>
+
       <div class="container">
         <div class="row">
           <div class="banner-info">
@@ -49,8 +72,6 @@
             </div>
             <div class="banner-text text-center">
               <h1 class="white">La salud al alcance de tu casa!</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod <br>tempor incididunt ut labore et dolore magna aliqua.</p>
-              <a href="#contact" class="btn btn-appoint">Make an Appointment.</a>
             </div>
             <div class="overlay-detail text-center">
               <a href="#service"><i class="fa fa-angle-down"></i></a>
@@ -66,9 +87,11 @@
     <div class="container">
       <div class="row">
         <div class="col-md-4 col-sm-4">
-          <h2 class="ser-title">Our Service</h2>
+          <h2 class="ser-title">Nuestros servicios</h2>
           <hr class="botm-line">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris cillum.</p>
+          <p>En petroSalud nos esforzamos por brindar servicios de calidad ligados a la mejor atencion y a hacerlo
+            sentir parte de nuestra familia.</p>
+          <a href="citas.html" class="btn btn-appoint" target="_new"> <strong> RESERVA TU CITA </strong></a>
         </div>
         <div class="col-md-4 col-sm-4">
           <div class="service-info">
@@ -76,8 +99,9 @@
               <i class="fa fa-stethoscope"></i>
             </div>
             <div class="icon-info">
-              <h4>24 Hour Support</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <h4>Soporte las 24 horas</h4>
+              <p>No importa el dia ni la hora, en PetroSalud sientase libre de consultar nuestro portafolio de servicios
+                y hacer uso de el en cualquier momento del dia</p>
             </div>
           </div>
           <div class="service-info">
@@ -85,8 +109,10 @@
               <i class="fa fa-ambulance"></i>
             </div>
             <div class="icon-info">
-              <h4>Emergency Services</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <h4>Servicio de urgencias</h4>
+              <p>A su llegada, los pacientes son clasificados a través del triage, en donde el personal de enfermería
+                identifica sus necesidades y condición para determinar los criterios para su atención por urgencia,
+                consulta prioritaria o consulta externa .</p>
             </div>
           </div>
         </div>
@@ -96,8 +122,10 @@
               <i class="fa fa-user-md"></i>
             </div>
             <div class="icon-info">
-              <h4>Medical Counseling</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <h4>Equipo medico humano</h4>
+              <p>25 especialistas y subespecialistas del área de Ortopedia y Geriatría, junto con áreas de apoyo como
+                medicina interna, anestesia, urgentología, deportología, psiquiatría, endocrinología y radiología, hacen
+                parte de este proyecto.</p>
             </div>
           </div>
           <div class="service-info">
@@ -105,8 +133,10 @@
               <i class="fa fa-medkit"></i>
             </div>
             <div class="icon-info">
-              <h4>Premium Healthcare</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <h4>Cuidado Premium</h4>
+              <p>El Plan Premium de IPS PetroSalud es nuestro nuevo plan de atención complementaria para ti y tu familia
+                que les da acceso a beneficios especiales y coberturas adicionales a las ofrecidas por el Plan
+                Obligatorio de Salud POS.</p>
             </div>
           </div>
         </div>
@@ -119,42 +149,29 @@
     <div class="container">
       <div class="row">
         <div class="schedule-tab">
-          <div class="col-md-4 col-sm-4 bor-left">
-            <div class="mt-boxy-color"></div>
-            <div class="medi-info">
-              <h3>Emergency Case</h3>
-              <p>I am text block. Edit this text from Appearance / Customize / Homepage header columns. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-              <a href="#" class="medi-info-btn">READ MORE</a>
-            </div>
+          <div class="pe-e">
+            <h3 class="p_e">¿Por qué escoger nuestros servicios?</h3>
           </div>
-          <div class="col-md-4 col-sm-4">
-            <div class="medi-info">
-              <h3>Emergency Case</h3>
-              <p>I am text block. Edit this text from Appearance / Customize / Homepage header columns. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-              <a href="#" class="medi-info-btn">READ MORE</a>
-            </div>
+          <h3>Misión</h3>
+          <div class="mision">
+            <p>En PetroSalud, brindamos seguridad en los examenes clinicos con eficiencia, confiabilidad, oportunos y
+              de caldiad bajo los estanadares nacionales e internacionales apoyandonos en el trabajo humano calificado
+              y equipo tecnologico avanzado.
+            </p>
           </div>
-          <div class="col-md-4 col-sm-4 mt-boxy-3">
-            <div class="mt-boxy-color"></div>
-            <div class="time-info">
-              <h3>Opening Hours</h3>
-              <table style="margin: 8px 0px 0px;" border="1">
-                <tbody>
-                  <tr>
-                    <td>Monday - Friday</td>
-                    <td>8.00 - 17.00</td>
-                  </tr>
-                  <tr>
-                    <td>Saturday</td>
-                    <td>9.30 - 17.30</td>
-                  </tr>
-                  <tr>
-                    <td>Sunday</td>
-                    <td>9.30 - 15.00</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
+          <h3>Visión</h3>
+          <div class="vision">
+            <p>Para el 2025, tenemos como objetivo la renovacion tecnologica y cientifica en la prestacion de nuestros
+              servicios, como tambien, la amplicacion de nuestras instalaciones llegando así a mas usuarios y clientes
+              del territorio nacional.
+            </p>
+          </div>
+          <div id="valo">
+            <h3 class="val">Valores</h3>
+            <button type="button" class="btn btn-success">Transparencia</button>
+            <button type="button" class="btn btn-success">Honestidad</button>
+            <button type="button" class="btn btn-success">Compromiso social</button>
+            <button type="button" class="btn btn-success">Calidad</button>
           </div>
         </div>
       </div>
@@ -162,45 +179,44 @@
   </section>
   <!--cta-->
   <!--about-->
-  <section id="about" class="section-padding">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-3 col-sm-4 col-xs-12">
-          <div class="section-title">
-            <h2 class="head-title lg-line">The Medilap <br>Ultimate Dream</h2>
-            <hr class="botm-line">
-            <p class="sec-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..</p>
-            <a href="" style="color: #0cb8b6; padding-top:10px;">Know more..</a>
-          </div>
-        </div>
-        <div class="col-md-9 col-sm-8 col-xs-12">
-          <div style="visibility: visible;" class="col-sm-9 more-features-box">
-            <div class="more-features-box-text">
-              <div class="more-features-box-text-icon"> <i class="fa fa-angle-right" aria-hidden="true"></i> </div>
-              <div class="more-features-box-text-description">
-                <h3>It's something important you want to know.</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. Ut wisi enim ad minim veniam, quis nostrud.</p>
-              </div>
-            </div>
-            <div class="more-features-box-text">
-              <div class="more-features-box-text-icon"> <i class="fa fa-angle-right" aria-hidden="true"></i> </div>
-              <div class="more-features-box-text-description">
-                <h3>It's something important you want to know.</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. Ut wisi enim ad minim veniam, quis nostrud.</p>
-              </div>
-            </div>
-          </div>
+  <div>
+    <div class="time-info">
+      <h1 id="th1">Horarios de Atención</h1>
+      <div class="arreglotabla">
+        <div>
+          <table class="tablita">
+            <tbody>
+              <tr>
+                <td>LUNES A VIERNES</td>
+                <td>8:00 - 17:00</td>
+              </tr>
+              <tr>
+                <td>SÁBADO</td>
+                <td>9:30 - 17:30</td>
+              </tr>
+              <tr>
+                <td>DOMINGO</td>
+                <td>9:30 - 13:00</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
+      <div>
+        <h3 class="tmp">Ubicación de <br> nuestras sedes</h3>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d254508.39280844532!2d-74.24789416679981!3d4.648625938368067!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9bfd2da6cb29%3A0x239d635520a33914!2zQm9nb3TDoQ!5e0!3m2!1ses-419!2sco!4v1648256604438!5m2!1ses-419!2sco"
+          class="mapa" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
     </div>
-  </section>
+  </div>
   <!--/ about-->
   <!--doctor team-->
   <section id="doctor-team" class="section-padding">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h2 class="ser-title">Meet Our Doctors!</h2>
+          <h2 class="ser-title">Conoce a nuestro Equipo de Profesioanles</h2>
           <hr class="botm-line">
         </div>
         <div class="col-md-3 col-sm-3 col-xs-6">
@@ -274,40 +290,56 @@
           <button type="button" id="btnComentar" class="btn btn-primary mb-3">Comentar</button>
           <hr class="botm-line">
         </div>
-        <div class="col-md-4 col-sm-4" >
-                    
+        <div class="col-md-4 col-sm-4">
+        </div>
       </div>
-    </div>
   </section>
   <!--cta 2-->
-  <section id="cta-2" class="section-padding">
-    <div class="container">
-      <div class=" row">
-        <div class="col-md-2"></div>
-        <div class="text-right-md col-md-4 col-sm-4">
-          <h2 class="section-title white lg-line">« A few words<br> about us »</h2>
-        </div>
-        <div class="col-md-4 col-sm-5">
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a typek
-          <p class="text-right text-primary"><i>— Medilap Healthcare</i></p>
-        </div>
-        <div class="col-md-2"></div>
+  
+  <div id="ContenedorDelCarrusel">
+    <h2 class="section-title white lg-line">« Un Blog <br> para tu Salud »</h2>
+    <div class="carrusel" id="carrusel_1">
+      <div class="tarjeta" id="tarjeta_1">
+        <a href="https://www.pulzo.com/nacion/casos-coronavirus-hoy-colombia-sabado-26-marzo-contagios-muertes-PP1292234"></a>
+      </div>
+      <div class="flechas">
+        <a href="#carrusel_3"> <i class="fa-solid fa-circle-arrow-left"></i> </a> 
+        <a href="#carrusel_2"> <i class="fa-solid fa-circle-arrow-right"></i> </a>
       </div>
     </div>
-  </section>
+    <div class="carrusel" id="carrusel_2">
+      <div class="tarjeta" id="tarjeta_2">
+        B
+      </div>
+      <div class="flechas">
+        <a href="#carrusel_1"> <i class="fa-solid fa-circle-arrow-left"></i>  </a> 
+        <a href="#carrusel_3"> <i class="fa-solid fa-circle-arrow-right"></i> </a>
+      </div>
+    </div>
+    <div class="carrusel" id="carrusel_3">
+      <div class="tarjeta" id="tarjeta_3">
+        C
+      </div>
+      <div class="flechas">
+        <a href="#carrusel_2"> <i class="fa-solid fa-circle-arrow-left"></i>  </a> 
+        <a href="#carrusel_1"> <i class="fa-solid fa-circle-arrow-right"></i> </a>
+      </div>
+    </div>
+  </div>
   <!--cta-->
-  
   <!--footer-->
+<div id="final">
   <footer id="footer">
     <div class="top-footer">
       <div class="container">
         <div class="row">
           <div class="col-md-4 col-sm-4 marb20">
             <div class="ftr-tle">
-              <h4 class="white no-padding">About Us</h4>
+              <h4 class="white no-padding">¿Quienes somos?</h4>
             </div>
             <div class="info-sec">
-              <p>Praesent convallis tortor et enim laoreet, vel consectetur purus latoque penatibus et dis parturient.</p>
+              <p> PetroSalud, un Laboratorio Clínico con más de 15 años de experiencia líder en el desarrollo y
+                prestación de servicios especializados. Fundado por 4 médicos en el 1980 en Bogotá.</p>
             </div>
           </div>
           <div class="col-md-4 col-sm-4 marb20">
@@ -316,15 +348,15 @@
             </div>
             <div class="info-sec">
               <ul class="quick-info">
-                <li><a href="index.html"><i class="fa fa-circle"></i>Home</a></li>
-                <li><a href="#service"><i class="fa fa-circle"></i>Service</a></li>
-                <li><a href="#contact"><i class="fa fa-circle"></i>Appointment</a></li>
+                <li><a href="index.html"><i class="fa fa-circle"></i>Inicio</a></li>
+                <li><a href="#service"><i class="fa fa-circle"></i>Servicios</a></li>
+                <li><a href="#contact"><i class="fa fa-circle"></i>Sobre nosotros</a></li>
               </ul>
             </div>
           </div>
           <div class="col-md-4 col-sm-4 marb20">
             <div class="ftr-tle">
-              <h4 class="white no-padding">Follow us</h4>
+              <h4 class="white no-padding">Síguenos</h4>
             </div>
             <div class="info-sec">
               <ul class="social-icon">
@@ -342,7 +374,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12 text-center">
-            © Copyright Medilab Theme. All Rights Reserved
+            Copyright © 2022 PetroSalud, Derechos reservados.
             <div class="credits">
               <!--
                 All the links in the footer should remain intact.
@@ -357,15 +389,23 @@
       </div>
     </div>
   </footer>
+</div>
+ 
   <!--/ footer-->
-
   <script src="js/jquery.min.js"></script>
   <script src="js/jquery.easing.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
-  
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
   <script src="contactform/contactform.js"></script>
   <script src="./js/comentar.js"></script>
-
 </body>
 
 </html>
