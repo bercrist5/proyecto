@@ -241,9 +241,18 @@ cta-1
     margin-left: 517px;
 }
 .btn{
-    margin-inline-start: 135px;
+    margin-left: 0;
     margin-bottom: 35px;
 }
+
+#valo .btn{
+    background-color: rgba(171, 253, 253, 0.856);
+    margin-left: 130px;
+    margin-top: 30px;
+    color: #000;
+
+}
+
 .medi-info, .time-info{
     font-size: 14px;
 }
@@ -277,8 +286,14 @@ h3{
 /***************************************
 doctor team
 ***************************************/
-.thumbnail {
-	border-radius: 0px;
+.thumbnail .team-img {
+	border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.thumbnail{
+    align-content: center;
 }
 .caption h3{
     padding-bottom: 5px;
@@ -286,6 +301,10 @@ doctor team
 .caption p{
     padding-bottom: 10px;
 }
+
+
+
+
 /***************************************
 testimonial
 ***************************************/
