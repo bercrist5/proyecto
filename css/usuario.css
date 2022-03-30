@@ -1,4 +1,4 @@
-@import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css");
+
 
 * {
     box-sizing: border-box;
@@ -25,7 +25,18 @@ body {
     padding: 10px;
 }
 
-.bigicon {
-    font-size: 35px;
+.glyphicon {
+    font-size: 30px;
     color: #36A0FF;
+}
+
+.container{
+    margin: auto;
+    margin-top: 5%;
+}
+
+.logo img {
+    width: 70px;
+    height: 40px;
+    margin-top: -2px;
 }
