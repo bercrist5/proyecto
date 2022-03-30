@@ -59,13 +59,13 @@ $(document).ready(function() {
                 usuarioExiste = true;
                 if (contrasenaUsuario[i] == contrasena) {
                     alert("Usuario " + id + " ingresado correctamente al sistema, contrasena es " + contrasenaUsuario[i]);
-                    location.href = "citas.html";
+                    location.href = "index.html";
 
                 }
             }
 
         }
-
+        localStorage.setItem("id",id)
 
 
     });

@@ -1,3 +1,7 @@
+var nomUs = document.getElementById("nomUs");
+
+nomUs.value=localStorage.getItem("id")
+
 $(document).ready(function () {
 
     $("#butAgen").click(function () {
@@ -19,13 +23,13 @@ $(document).ready(function () {
 
 
             if (ser == "Medicina General") {
-                pro = "Doc. Cristian Bermeo"
+                pro = "Doc. Jessica Wally"
             } else if (ser == "Medicina Familiar") {
-                pro = "Doc. Juan Capitani"
+                pro = "Doc. Lai Donas"
             } else if (ser == "Consulta Prioritaria") {
-                pro = "Doc. Cristian Montealegre"
+                pro = "Doc. Amanda Denyl"
             } else {
-                pro = "Doc. Helmer Holguin"
+                pro = "Doc. Jason Davis"
             }
 
             $("#dNom").append("<label>" + nom + "</label>" + "<br>");

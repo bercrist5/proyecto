@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Medilab Free Bootstrap HTML5 Template</title>
+  <title>PetroSalud - Tu Salud en las Mejores Manos</title>
   <meta name="description" content="Free Bootstrap Theme by BootstrapMade.com">
   <meta name="keywords"
     content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
@@ -39,7 +39,7 @@
           </button>
 
           <!-- logo -->
-          <a class="navbar-brand" href="#"><img src="img/logo.png"></a>
+          <a class="navbar-brand" href="./index.html"><img src="img/logo.png"></a>
 
           <!-- enlaces -->
           <div class="collapse navbar-collapse" id="opciones">
@@ -60,7 +60,8 @@
           </div>
           <div>
             <!-- nombre del usuario-->
-            <input type="text" class="n_usuario">
+            <button id="cerSes">Cerrar Sesión</button>
+            <input id="nomUs" value="" disabled placeholder="Usuario">
           </div>
         </div>
       </nav>
@@ -90,7 +91,8 @@
         <hr class="botm-line">
         <p>En petroSalud nos esforzamos por brindar servicios de calidad ligados a la mejor atencion y a hacerlo
           sentir parte de nuestra familia.</p>
-        <a href="citas.html" class="btn btn-appoint" target="_new"> <strong> RESERVA TU CITA </strong></a>
+        <a   class="btn btn-appoint" target="_new" id="butReser"> <strong> RESERVA TU CITA </strong></a>
+        <!-- href="citas.html"  -->
       </div>
       <div class="col-md-4 col-sm-4">
         <div class="service-info">
@@ -238,7 +240,7 @@
             <img src="img/doctor1.jpg" alt="..." class="team-img">
             <div class="caption">
               <h3>Jessica Wally</h3>
-              <p>Doctor</p>
+              <p>Doctor en Medicina General</p>
               <ul class="list-inline">
                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                 <li><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -252,7 +254,7 @@
             <img src="img/doctor2.jpg" alt="..." class="team-img">
             <div class="caption">
               <h3>Iai Donas</h3>
-              <p>Doctor</p>
+              <p>Doctor en Medicina Familiar</p>
               <ul class="list-inline">
                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                 <li><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -266,7 +268,7 @@
             <img src="img/doctor3.jpg" alt="..." class="team-img">
             <div class="caption">
               <h3>Amanda Denyl</h3>
-              <p>Doctor</p>
+              <p>Doctor en Consulta Prioritaria</p>
               <ul class="list-inline">
                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                 <li><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -280,7 +282,7 @@
             <img src="img/doctor4.jpg" alt="..." class="team-img">
             <div class="caption">
               <h3>Jason Davis</h3>
-              <p>Doctor</p>
+              <p>Doctor en Laboratorio Clínico</p>
               <ul class="list-inline">
                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                 <li><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -391,6 +393,7 @@
     crossorigin="anonymous"></script>
   <script src="contactform/contactform.js"></script>
   <script src="./js/comentar.js"></script>
+  <script src="./js/index.js"></script>
 </body>
 
 </html>
