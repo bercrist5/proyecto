@@ -7,9 +7,17 @@ var botonLogin = document.getElementById("iniciarLogin");
 var usuarioExiste = false;
 var mostrarLog = document.getElementById("mostrarLogin");
 var mostrarReg = document.getElementById("mostrarReg");
+var botonRegreso = document.getElementById("botonRegreso");
 
 $("#regForm").hide();
 $("#logForm").hide();
+
+botonRegreso.addEventListener("click", function() {
+
+    $("#regForm").hide();
+    $("#optForm").show();
+
+});
 
 mostrarLog.addEventListener("click", function() {
 
@@ -21,9 +29,12 @@ mostrarLog.addEventListener("click", function() {
 mostrarReg.addEventListener("click", function() {
 
     $("#regForm").show();
+    $("#optForm").hide();
 
 
 });
+
+
 
 $(document).ready(function() {
 
@@ -64,7 +75,7 @@ $(document).ready(function() {
             }
 
         }
-        localStorage.setItem("id",id)
+        localStorage.setItem("id", id)
 
 
     });
