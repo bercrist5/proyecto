@@ -1,19 +1,38 @@
-.tablaCitas{
-    margin-left: 20%;
-}
-
 #citasPadre{
     display: flex;
-    flex-direction: row;
     height: 300px;
 }
 .citasHijo{
-    border: 1px solid;
+    border-bottom: 1px solid;
     width: 100%;
 }
 .citasEnca{
-    text-align: center;
+    text-align: left;
 }
-hr{
-    border: solid 1px black;
+
+.col-4{
+    padding-bottom: 20px;
+    padding-top: 20px;
+    text-align: left;
+    align-items: center;
+    margin: auto;
+}
+
+.inputs{
+    border: 3px solid rgb(224, 224, 224);
+    border-radius: 20px;
+    box-shadow: 1px 2px 2px 0.8px;
+}
+
+.col-12{
+    padding-bottom: 20px;
+    padding-top: 20px;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+}
+
+#butAgen{
+    width: 30%;
+    height: 40px;
 }

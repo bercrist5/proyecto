@@ -72,109 +72,130 @@
               <h1 class="white">RESERVA TU CITA AHORA</h1>
               <p>Por favor llena el siguiente formulario para registrar tu cita</p>
             </div>
-            
+
           </div>
         </div>
       </div>
     </div>
-  </section>
+  </section> <br><br>
 
   <!--/ banner-->
   <!--service-->
-  <table class="tablaCitas">
-    <tr>
-      <td>Nombre: </td>
-      <td><input type="text" class="form-control" name="" id="inpNom"></td>
-    </tr>
-    <tr>
-      <td>Apellido: </td>
-      <td><input type="text" class="form-control" name="" id="inpApe"></td>
-    </tr>
-    <tr>
-      <td>Cedula: </td>
-      <td><input type="numebr" class="form-control" name="" id="inpCel"></td>
-    </tr>
-    <tr>
-      <td>Teléfono: </td>
-      <td><input type="number" class="form-control" id="inpTel"></td>
-    </tr>
-    <tr>
-      <td>E-Mail: </td>
-      <td><input type="email" class="form-control" name="" id="inpEma"></td>
-    </tr>
-    <div id="inpRadio">
-      <tr>
-        <td>Servicio: </td>
-        <td><input type="radio" class="radio form-check-input" name="servicioRadio" value="Medicina General">Medicina General</td>
-        <td><input type="radio" name="servicioRadio" id="" class="radio form-check-input" value="Medicina Familiar">Medicina Familiar
-        </td>
+  <div class="container inputs">
+    <div class="row">
+      <div class="col-4">
 
-      </tr>
-      <tr>
-        <td></td>
-        <td><input type="radio" class="radio form-check-input" name="servicioRadio" value="Consulta Prioritaria">Consulta Prioritaria
-        </td>
-        <td><input type="radio" name="servicioRadio" id="" class="radio form-check-input" value="Laboratorio Clínico">Laboratorio Clínico
-        </td>
-      </tr>
+        <label>Nombre:</label><br>
+        <input type="text" class="form-control" name="" id="inpNom">
+      </div>
+      <div class="col-4">
+        <label>Apellido:</label>
+
+        <input type="text" class="form-control" name="" id="inpApe">
+      </div>
+      <div class="col-4">
+        <label>Cedula: </label> <br>
+        <input type="numebr" class="form-control" name="" id="inpCel">
+      </div>
+
+      <div class="col-3">
+        <label>Teléfono:</label> <br>
+        <input type="number" class="form-control" id="inpTel">
+      </div>
+
+      <div class="col-9">
+
+        <label>E-Mail: </label> <br>
+        <input type="email" class="form-control" name="" id="inpEma">
+      </div>
+
+
+      <div class="col-4">
+        
+
+          <label>Servicio:</label> <br> <br>
+          <input type="radio" class="radio form-check-input" name="servicioRadio" value="Medicina General">Medicina
+          General<br>
+          <input type="radio" name="servicioRadio" id="" class="radio form-check-input"
+            value="Medicina Familiar">Medicina
+          Familiar <br>
+          <input type="radio" class="radio form-check-input" name="servicioRadio" value="Consulta Prioritaria">Consulta
+          Prioritaria <br>
+          <input type="radio" name="servicioRadio" id="" class="radio form-check-input"
+            value="Laboratorio Clínico">Laboratorio Clínico
+        
+      </div>
+
+      <div class="col-4">
+        <label>Fecha: </label> <br>
+        <input type="date" name="" id="inpFec">
+      </div>
+
+
+      <div class="col-4">
+        <label>Hora:</label> <br>
+        <input type="time" id="inpHor" name="" min="09:00" max="18:00" required>
+      </div>
+      
+
+      <div class="col-12">
+        <button id="butAgen" class="btn btn-primary">AGENDAR</button>
+      </div>
     </div>
-    <tr>
-      <td>Fecha: </td>
-      <td><input type="date" name="" id="inpFec"></td>
-    </tr>
-    <tr>
-      <td>Hora: </td>
-      <td><input type="time" id="inpHor" name="" min="09:00" max="18:00" required></td>
-      <td><button id="butAgen" class="btn btn-primary">AGENDAR</button></td>
-    </tr>
-  </table>
+  </div>
+
+
+
   <br><br>
 
-  <div id="citasPadre">
-    <div class="citasHijo">
-      <h4 class="citasEnca">Nombre</h4>
-      <hr>
-      <div id="dNom"></div>
-    </div>
-    <div class="citasHijo">
-      <h4 class="citasEnca">Apellido</h4>
-      <hr>
-      <p id="dApe"></p>
-    </div>
-    <div class="citasHijo">
-      <h4 class="citasEnca">Cedula</h4>
-      <hr>
-      <p id="dCel"></p>
-    </div>
-    <div class="citasHijo">
-      <h4 class="citasEnca">Teléfono</h4>
-      <hr>
-      <p id="dTel"></p>
-    </div>
-    <div class="citasHijo">
-      <h4 class="citasEnca">Email</h4>
-      <hr>
-      <p id="dEma"></p>
-    </div>
-    <div class="citasHijo">
-      <h4 class="citasEnca">Servicio</h4>
-      <hr>
-      <p id="dSer"></p>
-    </div>
-    <div class="citasHijo">
-      <h4 class="citasEnca">Fecha</h4>
-      <hr>
-      <p id="dFec"></p>
-    </div>
-    <div class="citasHijo">
-      <h4 class="citasEnca">Hora</h4>
-      <hr>
-      <p id="dHor"></p>
-    </div>
-    <div class="citasHijo">
-      <h4 class="citasEnca">Profesional</h4>
-      <hr>
-      <p id="dPro"></p>
+  <div class="container">
+
+    <div id="citasPadre">
+      <div class="citasHijo">
+        <h4 class="citasEnca">Nombre</h4>
+        <hr>
+        <div id="dNom"></div>
+      </div>
+      <div class="citasHijo">
+        <h4 class="citasEnca">Apellido</h4>
+        <hr>
+        <p id="dApe"></p>
+      </div>
+      <div class="citasHijo">
+        <h4 class="citasEnca">Cedula</h4>
+        <hr>
+        <p id="dCel"></p>
+      </div>
+      <div class="citasHijo">
+        <h4 class="citasEnca">Teléfono</h4>
+        <hr>
+        <p id="dTel"></p>
+      </div>
+      <div class="citasHijo">
+        <h4 class="citasEnca">Email</h4>
+        <hr>
+        <p id="dEma"></p>
+      </div>
+      <div class="citasHijo">
+        <h4 class="citasEnca">Servicio</h4>
+        <hr>
+        <p id="dSer"></p>
+      </div>
+      <div class="citasHijo">
+        <h4 class="citasEnca">Fecha</h4>
+        <hr>
+        <p id="dFec"></p>
+      </div>
+      <div class="citasHijo">
+        <h4 class="citasEnca">Hora</h4>
+        <hr>
+        <p id="dHor"></p>
+      </div>
+      <div class="citasHijo">
+        <h4 class="citasEnca">Profesional</h4>
+        <hr>
+        <p id="dPro"></p>
+      </div>
     </div>
   </div>
 
