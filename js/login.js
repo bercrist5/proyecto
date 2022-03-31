@@ -21,7 +21,6 @@ mostrarLog.addEventListener("click", function() {
 mostrarReg.addEventListener("click", function() {
 
     $("#regForm").show();
-    $("#optForm").hide();
 
 
 });
